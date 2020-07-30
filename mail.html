@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>HTMLメール</title>
+  <style type="text/css">
+    html {width:100%;height:100%;}
+    .btn-table {
+      width:100% !important; /* ボタンの横幅 */
+      background-color:#28a745 ; /* ボタンの色 */
+      }
+    .btn-td {
+      padding:10px !important; /* ボタン内側の余白 ＝ tableタグのcellpaddingにも"10"を指定 */
+      height:40px !important; /* ボタンの高さ */
+      }
+    .btn-td a {
+      color:#ffffff !important; /* ボタン文字色 */
+      text-decoration:none !important; /* リンクアンダーラインの有無 */
+      display:block !important; /* ボタンのリンク範囲を拡張 */
+      height: 100%;
+    }
+    .btn-font {
+      font-size:22px !important; /* ボタン文字サイズ */
+      line-height:50px !important; /* ボタン文字行間 */
+    }
+    @media only screen and (max-width: 600px) {
+      table {width:100% !important; min-width:100% !important;}
+      .responsive-td {width:100% !important; padding-left:5px !important; padding-right:5px !important;display:block !important; box-sizing: border-box !important;}
+      .responsive-img {width:100% !important; height:auto !important;}
+    }
+  </style>
+  <!--[if mso]>
+  <style type="text/css"> /* Outlook専用のcss */
+    table,td {border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0;}
+    table tr td {line-height: 1.4;}
+  </style>
+  <![endif]-->
+</head>
+<body style="width:100%;height:100%;margin:0;padding:0;">
+  <!-- 全体の背景色を指定するためのtable -->
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;height:100%;">
+    <tr>
+      <td valign="top">
+        <!-- 横幅を指定するためのtable -->
+        <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:600px;background-color:#ffffff;">
+          <tr>
+            <td>
+              <!-- ボタンtable -->
+              <table width="100%" border="0" cellpadding="20" cellspacing="0">
+                <tr>
+                  <td class="responsive-td" valign="top" align="left">
+                    <table border="0" class="btn-table" cellpadding="10" cellspacing="0" style="width:100%;background-color:#007bff;">
+                      <tr>
+                        <td align="center" valign="middle" style="height:30px;padding:5px;">
+                            <font class="btn-font" size="4" color="#ffffff" style="font-size:20px;line-height:1.4;">デジタル署名をリクエスト</font>
+                          </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- 罫線table -->
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="responsive-td" valign="top" align="center" height="25" style="border-bottom:1px dotted #999999;font-size:1px;line-height:0;">&nbsp;
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td class="responsive-td" valign="top" align="center" height="25" style="font-size:1px;line-height:0;">&nbsp;
+                    
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" border="0" cellpadding="20" cellspacing="0">
+                <tr>
+                  <td class="responsive-td" valign="top" align="left">
+                    <font size="3" color="#000000" style="font-size:16px;color:#000000;line-height:1.4;">
+                      角田様へ〇〇〇〇株式会社からメールが届いています。
+                    </font>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" border="0" cellpadding="20" cellspacing="0">
+                <tr>
+                  <td class="responsive-td" valign="top" align="left" width="20%">
+                    <font size="3" color="#000000" style="font-size:16px;color:#000000;line-height:1.4;">お客様名</font>
+                  </td>
+                  <td class="responsive-td" valign="top" align="left" width="80%">
+                    <font size="3" color="#000000" style="font-size:16px;color:#000000;line-height:1.4;">角田様</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="responsive-td" valign="top" align="left" width="20%">
+                    <font size="3" color="#000000" style="font-size:16px;color:#000000;line-height:1.4;">期限日</font>
+                  </td>
+                  <td class="responsive-td" valign="top" align="left" width="80%">
+                    <font size="3" color="#000000" style="font-size:16px;color:#000000;line-height:1.4;">2020/5/10</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="responsive-td" valign="top" align="left" width="20%">
+                    <font size="3" color="#000000" style="font-size:16px;color:#000000;line-height:1.4;">ご連絡</font>
+                  </td>
+                  <td class="responsive-td" valign="top" align="left" width="80%">
+                    <font size="3" color="#000000" style="font-size:16px;color:#000000;line-height:1.4;">サインの期限は、2020/5/10です。<br>ご不明点はお問い合わせください。</font>
+                  </td>
+                </tr>
+              </table>
+                <!-- ボタンtable -->
+                <table width="100%" border="0" cellpadding="20" cellspacing="0">
+                  <tr>
+                    <td class="responsive-td" valign="top" align="left">
+                      <table border="0" class="btn-table" cellpadding="10" cellspacing="0" style="width:100%;border-radius:5px;background-color:#28a745;">
+                        <tr>
+                          <td align="center" valign="middle" class="btn-td" style="height:60px;padding:10px;">
+                            <a style="color:#ffffff;text-decoration:none;display:block;" target="_blank" href="login.html">
+                              <font class="btn-font" size="5" color="#ffffff" style="font-size:24px;line-height:1.4;">サインの開始</font>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- 空白table 高さ40px -->
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="responsive-td" valign="top" align="left" height="40" style="font-size:1px;line-height:0;">&nbsp;
+                      
+                    </td>
+                  </tr>
+                </table>
+              <!-- フッターエリア -->
+              <table width="100%" border="0" cellpadding="20" cellspacing="0">
+                <tr>
+                  <td class="responsive-td" valign="top" align="left" style="background-color:#eee">
+                    <font size="2" style="font-size:14px;">
+                      cloudcus（クラウドキューズ）<br><br>
+                      本メールは配信専用メールアドレスから配信されています。<br>
+                      このメールを転送したり、他人と共有したりしないでください。
+                    </font>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
